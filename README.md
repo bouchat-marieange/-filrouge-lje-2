@@ -1,5 +1,7 @@
 # Projet Fil Rouge - Phase 5 : Application mobile
 
+URL de l'application mobile réalisée: 
+
 ## Objectifs d'apprentissage
 
 Développer une première application mobile via cordova/ionic
@@ -14,47 +16,54 @@ Possibilité d'obtenir les badges : Progressive Web App Builder / Mobile Native 
 
 Temps imparti estimé si cordova/ionic: 3 jours, en groupe.
 
+## Composition du groupe
+
+Notre équipe est à partir de cette phase composée de:
+
+* GJELOSHAJ Antoine
+* VAN ROOST Nicolas
+* BOUCHAT Marie-Ange
+
+Répartition des tâches voir Kaban github du projet.
+
 ## Projet
 
-Le projet imposé pour cette étape est celui des jeunes entreprises déja exploité lors de l'étape précédente (création du CMS) par notre équipe. Nous nous étions alors basé sur le projet site multipage de l'équipe précédente: https://github.com/stevegravy/filrouge-lje
+Le projet imposé pour cette étape est celui des jeunes entreprises déja exploité lors de l'étape précédente (création du CMS - https://becodegroupe3.000webhostapp.com/) par notre équipe. Nous nous étions alors basé sur le projet site multipage de l'équipe précédente: https://github.com/stevegravy/filrouge-lje - hébergé à cette adresse: https://filrougeg1.herokuapp.com/
 
 
 ## Repartir sur une base saine
 
-Afin de partir sur un base saine pour réaliser une application en progressive web app (PWA),nous allons recoder la totalité du site multipage codé par la précédente équipe en appliquant une mise en page classique HTML5/CSS3 - JQurey et Bootstrap pour l'aspect responsive. 
+Le site multipage réalisé en React présente de nombreuses incohérences et bugs d'affichage. Nous avons dû pour des raisons de temps nous baser sur celui-ci avec ces imperfections pour la mise en place du CMS.
+
+Afin de partir sur un base saine pour réaliser une application en progressive web app (PWA),nous allons recoder la totalité du site multipage réalisé par la précédente équipe en ReactJS en appliquant une mise en page classique HTML5/CSS3 - JQurey et Bootstrap pour l'aspect responsive. 
+
+Nous espérons de cette manière obtenir une interface saine tant pour le front-end que pour le backend pour déployer une progressive web app (PWA) esthétique et performante.
 
 
 ## Le projet initial
-
-# Projet Fil Rouge BeCode - Les jeunes entreprises
-
-## Qui est le client ?
 
 ![logo LJE](http://lje.be/images/logosLJE/LJE-Logo.jpg)
 
 LJE - Les jeunes entreprises
 
-Site existant actuel: http://www.lje.be/
+Site officiel existant actuel: http://www.lje.be/
+
+Site multipages à corriger: https://filrougeg1.herokuapp.com/
+
+Site CMS étape précédente: https://becodegroupe3.000webhostapp.com/) - accès au backend : https://becodegroupe3.000webhostapp.com/admin (user : admin - pass: admin)
 
 
-## Quelle est son activité ?
+## Contraintes imposées par le cahier des charges pour cette 5ème étape:
 
-Encourager les jeunes de 8 à 25 ans à activer leur potentiel entrepreneurial par la méthode "Learning by doing". Ils proposent aux jeunes de la 3e primaire à l'enseignement supérieur de développer des projets concrets d'entreprises (de la conception, à la concrétisation et au bilan d'activité de leur startup). Ils offrent aux jeunes un cadre légal et juridique pour développer une activité et mettent à leur disposition toute une série d'outils nécessaires à la réalisation de leur projet, ainsi qu'un encadrement assuré par des coachs bénévoles. 
+### Création d’une application mobile
 
-Ils proposent plusieurs programmes adaptés à l’âge des participants :
+Création d’une application mobile qui sera utilisée durant l’expérience mini entreprise
 
-* C ma ville (visant élèves de l'enseignement primaire) 
-* Mini-entreprises (visant élèves de l'enseignement secondaire)
-* Young-Entreprise Project (visant élèves de l'enseignement supérieur)
+Cette application sera un mix entre un LinkedIn like et un BusinessGame et reprendra :
+* Tous les profils des entreprises (un profil par entreprise)
+* Tous les étudiants inscrits dans l’une des écoles participant aux mini-entreprises auront la possibilité d’utiliser l’application et de décider d’investir dans les entreprises qu’ils jugeront les plus prometteuses. 
 
-**Important**
+Ceci permettra d’ajouter une nouvelle dimension à l’expérience mini-entreprise.
 
-Leur activité principale et leur atout majeur se situent au niveau du programme des Mini-Entreprises (166 mini-entreprises pour l’année 2017-2018).
 
-## Quels sont les problèmes à résoudre ?
 
-Le site actuel propose un site beaucoup trop large (55 pages) qu’il faudrait fractionner en plusieurs sites afin d’obtenir une meilleure lisibilité, une recherche plus simple des informations et un taux d’inscription plus élevé ainsi qu’un meilleur référencement par la création de liens inter-sites et un ciblage plus spécifique par mot clef et par public cible.
-
-Le site a clairement besoin d’une refonte, d’une optimisation et d’un écrémage de son contenu afin que les informations pertinentes soient mises en avant et optimisées pour une lecture web et plus spécifiquement sur mobiles (impératif pour le public cible jeune).
-
-Le site est actuellement en partie responsive, mais pas totalement et n’est clairement pas optimisé pour un affichage sur mobile (trop de texte - menus complexes - trop de contenus réunis au sur un même site - pas de hiérarchisation cohérente des informations)
