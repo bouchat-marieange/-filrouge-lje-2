@@ -35,7 +35,7 @@ Le projet imposé pour cette étape est celui des jeunes entreprises déja explo
 
 Le site multipage réalisé en React présente de nombreuses incohérences et bugs d'affichage. Nous avons dû pour des raisons de temps nous baser sur celui-ci avec ces imperfections pour la mise en place du CMS.
 
-Afin de partir sur un base saine pour réaliser une application en progressive web app (PWA),nous allons recoder la totalité du site multipage réalisé par la précédente équipe en ReactJS en appliquant une mise en page classique HTML5/CSS3 - JQurey et Bootstrap pour l'aspect responsive. 
+Pour l'étape de la PWA, nous repartons sur une base totalement vierge avec intégration de bootstrap. Aucun code ne sera donc récupérer des précédentes versions du site. Seul le site officiel nous sert de fil conducteur en tentant de garder un cohérence graphique avec celui-ci (charte graphique reprenant, couleur et logo du site original). Seule la police de caractère Helvetica Neue sera remplacée par Roboto qui en est proche car Helvetica Neue est payante. 
 
 Nous espérons de cette manière obtenir une interface saine tant pour le front-end que pour le backend pour déployer une progressive web app (PWA) esthétique et performante.
 
