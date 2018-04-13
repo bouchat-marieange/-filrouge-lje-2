@@ -6,21 +6,55 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="bootstrap.min.css">
+        <!-- <link rel="stylesheet" href="bootstrap.min.css"> -->
 
         <!-- Personnal CSS -->
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="styles_form.css">
 
     </head>
     <body>
-        <div class="TitreLightBlue">
-          <h1>J'investis</h1>
-        </div>
+      <!-- Header -->
+      <header>
+        <img src="images/logo/logo_lje_small_opti.jpg" alt="logo lje">
+      </header>
+
+      <!-- Navigation -->
+      <nav id="NavMobile">
+        <ul>
+          <li><a href="index.html"><img src="images/icones/home.png" alt="icone home"></a></li>
+          <li><a href="mini_entreprises.html"><img src="images/icones/mini.png" alt="icone mini-entreprises"></a></li>
+          <li><a href="investis.html"><img src="images/icones/investis.png" alt="icone j'investis"></a></li>
+        </ul>
+      </nav>
+
+      <nav id="NavTablet">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="mini_entreprises.html">Mini-Entreprises</a></li>
+          <li><a href="investis.html">Investir</a></li>
+        </ul>
+      </nav>
+
+      <div class="TitreLightBlue">
+        <h1>J'investis</h1>
+      </div>
+
+      <form>
+          <input placeholder="Name" type="text"  value="" required>
+          <input placeholder="Email address" type="email" onblur="this.setAttribute('value', this.value);" value="" required>
+          <span class="validation-text">Please enter a valid email address.</span>
+          <input placeholder="Location" type="text" value="" required>
+          <div class="flex">
+            <textarea placeholder="Message" rows="1" required></textarea>
+          </div>
+          <button>Send</button>
+      </form>
 
 
         <!-- jQuery en premier, puis Popper.js et enfin Bootstrap JS -->
-        <script src="jquery-3.3.1.slim.min.js"></script>
-        <script src="popper.min.js"></script>
-        <script src="bootstrap.min.js"></script>
+        <!-- <script src="jquery-3.3.1.slim.min.js"></script> -->
+        <!-- <script src="popper.min.js"></script> -->
+        <!-- <script src="bootstrap.min.js"></script> -->
     </body>
 </html>

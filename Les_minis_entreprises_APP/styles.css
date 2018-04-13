@@ -77,39 +77,60 @@
 /* Règles générales */
 *
 {
-  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-family: 'robotoregular', Helvetica, Arial, sans-serif;
+}
+
+p, ul
+{
+  color: #464646;
+}
+
+h2
+{
+  margin : 0;
+  padding: 0;
+}
+
+
+p
+{
+  margin: 16px 25px;
+  text-align: center;
 }
 
 .clearfix
 {
   clear: both;
+  overflow: auto;
 }
 
 /* Header */
 header
 {
+  display:block;
   width: 100%;
   text-align: center;
   padding: 15px 0px 15px 0px;
+  margin-bottom: 35px;
 }
 
 
 /* Navigation */
 nav
 {
-  /* background-color: #0073B9; */
   height: 40px;
   line-height: 40px;
   white-space: nowrap;
+  /* padding: 10px 0px; */
 }
 
-li
+nav li
 {
   float: left;
   width: 33%;
 }
 
-ul
+nav ul
 {
   list-style-type: none;
   margin: 0;
@@ -118,73 +139,99 @@ ul
   background-color: #0073B9;
 }
 
-li img
+nav li img
 {
-  max-width: 40%;
+  max-width: 20%;
+  min-width: 25%;
+  max-height
+  margin-top: 15px;
 }
 
-li a
+nav li a
 {
   display: block;
   color: #FFF;
   text-align: center;
-  /* padding: 14px 16px; */
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1.2em;
-
 }
 
-li a:hover
+nav li a:hover
 {
     background-color: #009EFF;
     text-decoration: none;
 }
-
-/* li a:hover:not(.active) {
-    background-color: #111;
-} */
 
 .active {
     background-color: #4CAF50;
 }
 
 /* Contenu */
+
 .TitreLightBlue
 {
   background-color: #71B8E3;
+  text-transform: uppercase;
   text-align: center;
+  font-size: 1.2em;
   padding-top: 10px;
   padding-bottom: 10px;
+  color: #fff;
 }
+
+#listeConditions
+{
+  margin-bottom: 85px;
+  overflow: auto;
+}
+
+/* Formulaire */
+
 
 /* Footer */
 footer
 {
   display: block;
   width: 100%;
+  height: 65px;
   position: fixed;
   bottom: 0;
   background-color: #F7F7F7;
   font-weight: bold;
-  height: 45px;
-  line-height: 45px;
+  margin-top:25px;
 }
 
+/* Footer */
 footer p
 {
   text-align: center;
+  height: 30px;
+  line-height: 30px;
 }
 
 
-
+/* Media Queries */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px)
 {
   #NavTablet
   {
-    visibility: hidden;
+    display: none;
+  }
+
+  header
+  {
+    margin-bottom: 0px;
+  }
+
+  nav
+  {
+    /* background-color: #0073B9; */
+    height: 4em;
+    line-height: 4em;
+    white-space: nowrap;
   }
 
 }
@@ -194,12 +241,11 @@ footer p
 {
   #NavMobile
   {
-    visibility: hidden;
+    display: none;
   }
 
   #NavTablet
   {
-    visibility: visible;
     margin-top:-40px;
   }
 
