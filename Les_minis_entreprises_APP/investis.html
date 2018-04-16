@@ -50,13 +50,14 @@
       </div>
 
       <form>
-          <input placeholder="Name" type="text"  value="" required>
-          <input placeholder="Email address" type="email" onblur="this.setAttribute('value', this.value);" value="" required>
-          <span class="validation-text">Please enter a valid email address.</span>
-          <input placeholder="Location" type="text" value="" required>
+          <input name="name" placeholder="Name" type="text"  value="" required>
+          <input name="email"placeholder="Email address" type="email" onblur="this.setAttribute('value', this.value);" value="" required>
+          <span  class="validation-text">Please enter a valid email address.</span>
+          <input name="location" placeholder="Location" type="text" value="" required>
           <div class="flex">
-            <textarea placeholder="Message" rows="1" required></textarea>
+            <textarea name="message" placeholder="Message" rows="1" required></textarea>
           </div>
+          <input name="id_entreprise" type="hidden" value="<?php echo $_GET['id']; ?>">
           <button>Send</button>
       </form>
 
