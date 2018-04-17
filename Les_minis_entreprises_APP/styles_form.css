@@ -91,159 +91,237 @@ html, body, form, span, h1 {
   border-radius: 3px 3px 0 0;
 } */
 
-form {
-  font-family: 'robotoregular', sans-serif;
-  width: 460px;
-  margin: 100px auto 0;
-  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
-  padding: 0 0 40px;
-  border-radius: 3px;
-  color: #555;
-}
 
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder {
-  font: inherit;
-  transition: transform 0.3s ease-in-out, font-size 0.3s ease-in-out, visibility 0.3s ease-in-out;
-}
 
-input,
-textarea {
-  font: inherit;
-  font-size: 0.8em;
-  margin: 28px 25px 10px;
-  width: 400px;
+/* @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700); */
+.material-form {
+  font-family: 'robotoregular',sans-serif;
+  font-weight: normal;
+  background: #B5DBED;
+  margin: -10px;
+  padding: 25px;
+}
+.material-form .container {
+  background: white;
+  padding: 50px;
+  padding-bottom: 100px;
+}
+.material-form .container .material-input {
+  position: relative;
+  margin-bottom: 30px;
+}
+.material-form .container .material-input input {
+  background-color: transparent;
+}
+.material-form .container .material-input label {
+  color: #999;
+  font-size: 16px;
+  position: absolute;
+  pointer-events: none;
+  top: 10px;
+  transition: 0.2s ease all;
+  width: 100%;
+}
+.material-form .container .material-input input:not([type]),
+.material-form .container .material-input input[type=text],
+.material-form .container .material-input input[type=password],
+.material-form .container .material-input input[type=email],
+.material-form .container .material-input input[type=url],
+.material-form .container .material-input input[type=time],
+.material-form .container .material-input input[type=date],
+.material-form .container .material-input input[type=datetime-local],
+.material-form .container .material-input input[type=tel],
+.material-form .container .material-input input[type=number],
+.material-form .container .material-input input[type=search] {
+  color: #333;
+  font-size: 16px;
+  padding: 10px 10px 10px 0;
+  position: relative;
   display: block;
   border: none;
-  padding: 20px 0 10px;
-  border-bottom: solid 1px #03A9F4;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #03A9F4 4%);
-  background-position: -400px 0;
-  background-size: 400px 100%;
-  background-repeat: no-repeat;
-  transition: background 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
-  resize: none;
-  overflow: hidden;
+  width: 100%;
+  border-bottom: 1px solid #d5d5d5;
 }
-input:focus::-webkit-input-placeholder,
-textarea:focus::-webkit-input-placeholder {
-  color: #03A9F4;
-}
-input:focus, input:valid,
-textarea:focus,
-textarea:valid {
-  box-shadow: none;
+.material-form .container .material-input input:not([type]):focus,
+.material-form .container .material-input input[type=text]:focus,
+.material-form .container .material-input input[type=password]:focus,
+.material-form .container .material-input input[type=email]:focus,
+.material-form .container .material-input input[type=url]:focus,
+.material-form .container .material-input input[type=time]:focus,
+.material-form .container .material-input input[type=date]:focus,
+.material-form .container .material-input input[type=datetime-local]:focus,
+.material-form .container .material-input input[type=tel]:focus,
+.material-form .container .material-input input[type=number]:focus,
+.material-form .container .material-input input[type=search]:focus {
   outline: none;
-  background-position: 0 0;
 }
-input:focus::-webkit-input-placeholder, input:valid::-webkit-input-placeholder,
-textarea:focus::-webkit-input-placeholder,
-textarea:valid::-webkit-input-placeholder {
-  font-size: 0.8em;
-  transform: translateY(-20px);
-  visibility: visible !important;
-  opacity: 1;
+.material-form .container .material-input input:not([type]):focus + label,
+.material-form .container .material-input input[type=text]:focus + label,
+.material-form .container .material-input input[type=password]:focus + label,
+.material-form .container .material-input input[type=email]:focus + label,
+.material-form .container .material-input input[type=url]:focus + label,
+.material-form .container .material-input input[type=time]:focus + label,
+.material-form .container .material-input input[type=date]:focus + label,
+.material-form .container .material-input input[type=datetime-local]:focus + label,
+.material-form .container .material-input input[type=tel]:focus + label,
+.material-form .container .material-input input[type=number]:focus + label,
+.material-form .container .material-input input[type=search]:focus + label,
+.material-form .container .material-input input:not([type]):valid + label,
+.material-form .container .material-input input[type=text]:valid + label,
+.material-form .container .material-input input[type=password]:valid + label,
+.material-form .container .material-input input[type=email]:valid + label,
+.material-form .container .material-input input[type=url]:valid + label,
+.material-form .container .material-input input[type=time]:valid + label,
+.material-form .container .material-input input[type=date]:valid + label,
+.material-form .container .material-input input[type=datetime-local]:valid + label,
+.material-form .container .material-input input[type=tel]:valid + label,
+.material-form .container .material-input input[type=number]:valid + label,
+.material-form .container .material-input input[type=search]:valid + label {
+  top: -10px;
+  font-size: 12px;
+  color: #167ffc;
 }
-
-input[type="email"] {
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #03A9F4 4%);
-  background-position: -400px 0;
-  background-repeat: no-repeat;
-  transition: border-bottom 0.3s ease, background 0.3s ease;
+.material-form .container .material-input input:not([type]):focus ~ .bar:before,
+.material-form .container .material-input input[type=text]:focus ~ .bar:before,
+.material-form .container .material-input input[type=password]:focus ~ .bar:before,
+.material-form .container .material-input input[type=email]:focus ~ .bar:before,
+.material-form .container .material-input input[type=url]:focus ~ .bar:before,
+.material-form .container .material-input input[type=time]:focus ~ .bar:before,
+.material-form .container .material-input input[type=date]:focus ~ .bar:before,
+.material-form .container .material-input input[type=datetime-local]:focus ~ .bar:before,
+.material-form .container .material-input input[type=tel]:focus ~ .bar:before,
+.material-form .container .material-input input[type=number]:focus ~ .bar:before,
+.material-form .container .material-input input[type=search]:focus ~ .bar:before,
+.material-form .container .material-input input:not([type]):focus ~ .bar:after,
+.material-form .container .material-input input[type=text]:focus ~ .bar:after,
+.material-form .container .material-input input[type=password]:focus ~ .bar:after,
+.material-form .container .material-input input[type=email]:focus ~ .bar:after,
+.material-form .container .material-input input[type=url]:focus ~ .bar:after,
+.material-form .container .material-input input[type=time]:focus ~ .bar:after,
+.material-form .container .material-input input[type=date]:focus ~ .bar:after,
+.material-form .container .material-input input[type=datetime-local]:focus ~ .bar:after,
+.material-form .container .material-input input[type=tel]:focus ~ .bar:after,
+.material-form .container .material-input input[type=number]:focus ~ .bar:after,
+.material-form .container .material-input input[type=search]:focus ~ .bar:after,
+.material-form .container .material-input input:not([type]):valid ~ .bar:before,
+.material-form .container .material-input input[type=text]:valid ~ .bar:before,
+.material-form .container .material-input input[type=password]:valid ~ .bar:before,
+.material-form .container .material-input input[type=email]:valid ~ .bar:before,
+.material-form .container .material-input input[type=url]:valid ~ .bar:before,
+.material-form .container .material-input input[type=time]:valid ~ .bar:before,
+.material-form .container .material-input input[type=date]:valid ~ .bar:before,
+.material-form .container .material-input input[type=datetime-local]:valid ~ .bar:before,
+.material-form .container .material-input input[type=tel]:valid ~ .bar:before,
+.material-form .container .material-input input[type=number]:valid ~ .bar:before,
+.material-form .container .material-input input[type=search]:valid ~ .bar:before,
+.material-form .container .material-input input:not([type]):valid ~ .bar:after,
+.material-form .container .material-input input[type=text]:valid ~ .bar:after,
+.material-form .container .material-input input[type=password]:valid ~ .bar:after,
+.material-form .container .material-input input[type=email]:valid ~ .bar:after,
+.material-form .container .material-input input[type=url]:valid ~ .bar:after,
+.material-form .container .material-input input[type=time]:valid ~ .bar:after,
+.material-form .container .material-input input[type=date]:valid ~ .bar:after,
+.material-form .container .material-input input[type=datetime-local]:valid ~ .bar:after,
+.material-form .container .material-input input[type=tel]:valid ~ .bar:after,
+.material-form .container .material-input input[type=number]:valid ~ .bar:after,
+.material-form .container .material-input input[type=search]:valid ~ .bar:after {
+  width: 51%;
+  background: #167ffc;
+  border-bottom: 0px;
 }
-input[type="email"] ~ span.validation-text {
+.material-form .container .material-input .bar {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+.material-form .container .material-input .bar:before,
+.material-form .container .material-input .bar:after {
+  content: '';
+  height: 2px;
+  width: 0px;
   position: absolute;
-  visibility: hidden;
-  font-family: 'robotoregular', sans-serif;
-  font-size: 0.6em;
-  width: 400px;
-  margin-left: 25px;
-  margin-top: -5px;
-  color: white;
-  transition: color 0.3s ease-in-out;
+  bottom: 0.5px;
+  background: #167ffc;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
 }
-input[type="email"]:not([value=""])::-webkit-input-placeholder {
-  font-size: 0.8em;
-  transform: translateY(-20px);
-  visibility: visible !important;
-  opacity: 1;
+.material-form .container .material-input .bar:before {
+  left: 51%;
 }
-input[type="email"]:not([value=""]):focus::-webkit-input-placeholder {
-  color: #03A9F4;
+.material-form .container .material-input .bar:after {
+  right: 49%;
 }
-input[type="email"]:not([value=""]):focus:not(:valid)::-webkit-input-placeholder {
-  color: #E91E63;
+.material-form .container .material-input .bar + label:after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 65px;
+  opacity: 0;
+  transition: 0.2s opacity ease-out, 0.2s color ease-out;
+  -moz-transition: 0.2s opacity ease-out, 0.2s color ease-out;
+  -webkit-transition: 0.2s opacity ease-out, 0.2s color ease-out;
 }
-input[type="email"]:focus {
-  background-position: 0 0;
+.material-form .container .material-input select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  background-color: transparent;
+  /* background: url('images/icones/sort-down.svg') right transparent; */
+  color: #333;
+  font-size: 16px;
+  padding: 10px 10px 10px 0;
+  position: relative;
+  display: block;
+  width: 300px;
+  border: none;
+  border-bottom: 1px solid #d5d5d5;
+  border-radius: 0;
 }
-input[type="email"]:focus:not(:valid):not([value=""]) {
-  border-bottom: solid 1px #E91E63;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #E91E63 4%);
+.material-form .container .material-input select:focus {
+  outline: none;
 }
-input[type="email"]:not(:focus):not(:valid):not([value=""]) {
-  border-bottom: solid 1px #E91E63;
-  background-position: 0 0;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #E91E63 4%);
+.material-form .container .material-input select + .icon-arrow-down {
+  position: absolute;
+  float: right;
 }
-input[type="email"]:not(:focus):not(:valid):not([value=""])::-webkit-input-placeholder {
-  color: #E91E63;
-}
-input[type="email"]:not(:focus):not(:valid):not([value=""]) ~ span.validation-text {
-  visibility: visible;
-  color: #E91E63;
+.material-form .container .material-input select option:checked + label {
+  display: none;
 }
 
-.flex {
-  display: flex;
-  align-items: stretch;
-}
-.flex textarea {
-  line-height: 120%;
-}
-
-button {
+button
+{
   font-family: 'robotoregular', sans-serif;
   transition: transform 0.2s cubic-bezier(0.64, 0.09, 0.08, 1), box-shadow 0.2s cubic-bezier(0.64, 0.09, 0.08, 1);
   border: none;
   background: #03A9F4;
   cursor: pointer;
   border-radius: 3px;
-  padding: 6px;
-  width: 400px;
+  padding: 5px 0 5px 0;
+  width: 30%;
   color: white;
-  margin: 30px 0 0 25px;
+  margin: 25px 0 10px 0;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
 }
+
 button:hover {
   transform: translateY(-2px);
   box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.2);
 }
 
-a {
-  width: 42px;
-  height: 42px;
-  border-radius: 50px;
-  background: #03A9F4;
-  display: inline-block;
-  margin: 50px calc(50% - 21px);
-  white-space: nowrap;
-  padding: 13px;
-  box-sizing: border-box;
-  color: white;
-  transition: all 0.2s cubic-bezier(0.64, 0.09, 0.08, 1);
-  font-family: 'robotoregular', sans-serif;
-  text-decoration: none;
-  box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.2);
+.bouton_form
+{
+  float: right;
 }
-a i {
-  margin-right: 20px;
-  transition: margin-right 0.2s cubic-bezier(0.64, 0.09, 0.08, 1);
+
+.label-€
+{
+  text-align: right;
 }
-a:hover {
-  width: 134px;
-  transform: translateX(-50px);
-}
-a:hover i {
-  margin-right: 10px;
+
+.fleche-bas
+{
+  text-align: left;
+  padding-left:285px;
 }
