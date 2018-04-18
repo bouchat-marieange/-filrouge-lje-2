@@ -1,3 +1,7 @@
+<?php include 'model/entreprise.php'; 
+  var ent= get_entreprise_id($_get['id']);
+
+?>
 <!doctype html>
 <html lang="fr">
     <head>
@@ -23,6 +27,19 @@
     </head>
     <body>
         <h1>Hello, world !</h1>
+        <img src="/logo_produit/<?php echo ent['logo'] ?>" alt="">
+        <span>Produit:</span>
+        <span>Ecole:</span>
+        <span>Liens:</span>
+        <span>E-mail</span>
+        
+        <p>Cette mini app a déjà recolté   €</p>
+        <?php $_GET['id'];
+            echo ent['nom'];
+            echo ent['investissements'];
+
+        
+        ?>
 
         <!--Liens vers investissement avec id de l'entreprise dans l'url -->
         <!-- jQuery en premier, puis Popper.js et enfin Bootstrap JS -->
