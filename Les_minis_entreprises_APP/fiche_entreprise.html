@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="fr">
     <head>
-        <title>Entreprise 001</title>
+        <title>Fiche mini-entreprise</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -22,7 +22,58 @@
 
     </head>
     <body>
-        <h1>Hello, world !</h1>
+      <!-- Header -->
+      <header>
+        <img src="images/logo/logo_lje_small_opti.jpg" alt="logo lje">
+      </header>
+
+      <!-- Navigation -->
+      <nav id="NavMobile">
+        <ul class="ul_nav_mobile">
+          <li class="li_nav_mobile"><a class="a_nav_mobile" href="index.html"><img class="img_nav_mobile" src="images/icones/home.png" alt="icone home"></a></li>
+          <li class="li_nav_mobile"><a class="a_nav_mobile" href="mini_entreprises.html"><img class="img_nav_mobile"src="images/icones/mini.png" alt="icone mini-entreprises"></a></li>
+          <li class="li_nav_mobile"><a class="a_nav_mobile" href="investis.html"><img class="img_nav_mobile"src="images/icones/investis.png" alt="icone j'investis"></a></li>
+        </ul>
+      </nav>
+
+      <nav id="NavTablet">
+        <ul class="ul_nav_tablet">
+          <li class="li_nav_tablet"><a class="a_nav_tablet" href="index.html">Home</a></li>
+          <li class="li_nav_tablet"><a class="a_nav_tablet" href="mini_entreprises.html">Mini-Entreprises</a></li>
+          <li class="li_nav_tablet"><a class="a_nav_tablet" href="investis.html">Investir</a></li>
+        </ul>
+      </nav>
+
+      <div class="clearfix"></div>
+
+      <div class="TitreLightBlue">
+        <h1 class="Antoine">Nom de la mini-entreprise</h1>
+      </div>
+
+      <div id="logo_produit"></div>
+      <div id="photo_produit"></div>
+
+      <div id="infos_mini">
+        <h2>Nom de la mini-entreprise</h2>
+        <p>
+          <span class="bold">Produit :</span>
+          <span id="nom_produit" class="Antoine">Nom du Produit</span>
+        </p>
+        <p>
+          <span class="bold">École :</span>
+          <span id="nom_produit" class="Antoine">Nom du Produit</span>
+        </p>
+        <p>
+          <span class="bold">Liens Facebook :</span>
+          <span id="lien_facebook" class="Antoine">Nom du Produit</span>
+        </p>
+        <p>
+          <span class="bold">Email :</span>
+          <span id="email_mini" class="Antoine">Nom du Produit</span>
+        </p>
+
+
+      </div>
 
         <!--Liens vers investissement avec id de l'entreprise dans l'url -->
         <!-- jQuery en premier, puis Popper.js et enfin Bootstrap JS -->
