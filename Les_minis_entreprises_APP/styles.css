@@ -39,6 +39,11 @@
 
 
 /* Règles générales */
+.Antoine
+{
+  color: #22EE29;
+}
+
 html
 {
   width: 100%;
@@ -60,6 +65,12 @@ p, ul
   color: #464646;
 }
 
+.bold
+{
+  font-family: 'robotobold', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
 h2
 {
   margin : 0;
@@ -70,6 +81,11 @@ p
 {
   margin: 16px 25px;
   text-align: center;
+}
+
+.clearfix
+{
+  clear: both;
 }
 
 
