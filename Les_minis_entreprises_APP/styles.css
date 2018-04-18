@@ -47,7 +47,7 @@ html
 
 body
 {
-  width: 100%;
+  width: 100vw;
 }
 
 *
@@ -72,11 +72,6 @@ p
   text-align: center;
 }
 
-/* .clearfix
-{
-  clear: both;
-  overflow: auto;
-} */
 
 /* Header */
 header
