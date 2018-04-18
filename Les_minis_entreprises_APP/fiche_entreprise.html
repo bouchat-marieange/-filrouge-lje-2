@@ -1,3 +1,7 @@
+<?php include 'model/entreprise.php';
+  var ent= get_entreprise_id($_get['id']);
+
+?>
 <!doctype html>
 <html lang="fr">
     <head>
@@ -50,8 +54,8 @@
         <h1 class="Antoine">Nom de la mini-entreprise</h1>
       </div>
 
-      <div id="logo_produit"></div>
-      <div id="photo_produit"></div>
+      <div id="logo_produit"><img src="/logo_produit/<?php echo ent['logo'] ?>" alt="logo produit"></div>
+      <div id="photo_produit"><img src="/logo_produit/<?php echo ent['photo'] ?>" alt="photo produit"></div>
 
       <div id="infos_mini">
         <h2>Nom de la mini-entreprise</h2>
@@ -71,6 +75,16 @@
           <span class="bold">Email :</span>
           <span id="email_mini" class="Antoine">Nom du Produit</span>
         </p>
+
+        <p>Cette mini app a déjà recolté   €</p>
++        <?php $_GET['id'];
++            echo ent['nom'];
++            echo ent['investissements'];
++
++
++        ?>
+
+        <!--Liens vers investissement avec id de l'entreprise dans l'url -->
 
 
       </div>

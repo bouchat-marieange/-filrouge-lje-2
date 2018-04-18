@@ -1,6 +1,6 @@
 <?php 
 
-function get_all()
+function get_all_entreprise()
 {
     $bdd = new PDO("mysql:host=localhost;dbname=lje_app","root","root",[PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"]);
     $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
@@ -10,6 +10,17 @@ function get_all()
     $stmt->execute();
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
         
+}
+function get_entreprise_id($id)
+{
+    $bdd = new PDO("mysql:host=localhost;dbname=lje_app","root","root",[PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"]);
+    $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
+    
+    $stmt = $bdd->prepare("SELECT * FROM entrepises WHERE id = :id");
+    
+    $stmt->execute(['id'=>$id]);
+    return $stmt->fetchAll(PDO::FETCH_ASSOC)[0];
+
 }
 function investis()
 {
