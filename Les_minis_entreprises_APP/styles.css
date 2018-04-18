@@ -152,8 +152,9 @@ nav li a:hover
     background-color: #4CAF50;
 }
 
-/* Contenu */
 
+
+/* Contenu */
 .TitreLightBlue
 {
   background-color: #71B8E3;
@@ -404,6 +405,51 @@ button:hover {
   text-align: left;
   padding-left:285px;
 }
+
+
+
+/* Fiche mini-entreprises */
+#infos_mini
+{
+  width: 80%;
+  text-align:left;
+}
+
+#infos_mini h2
+{
+  text-align: center;
+}
+
+#infos_mini p
+{
+  text-align: left;
+}
+
+#nom_mini
+{
+
+}
+
+#description_produit
+{
+
+}
+
+#nom_ecole
+{
+
+}
+
+#lien_facebook
+{
+
+}
+
+#email_mini
+{
+
+}
+
 
 /* Footer */
 footer
