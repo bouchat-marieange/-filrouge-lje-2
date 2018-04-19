@@ -151,8 +151,11 @@ nav li a:hover
 .active {
     background-color: #4CAF50;
 }
-
-
+.animup-sel{display: block}
+.animup-up{
+  transform: scale(50%);
+  transform: translateY(-20px);
+}
 
 /* Contenu */
 .TitreLightBlue

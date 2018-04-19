@@ -71,7 +71,7 @@
 
           <!-- Attention Antoine à remplir avec le vrai nom des écoles participantes selectionnées par Antoine -->
           <div class="material-input">
-            <select class="input-EcoleEleve">
+            <select class="input-EcoleEleve" class="animup-sel">
               <option disabled selected></option>
               <option value="1">Ecole 1</option>
               <option value="2">Ecole 2</option>
@@ -84,7 +84,7 @@
               <option value="9">Ecole 9</option>
               <option value="10">Ecole 10</option>
             </select>
-            <label>Ecole dans laquelle vous êtes inscrit(e) &#9660;</label>
+            <label id="animup-sel" class="animup-sel">Ecole dans laquelle vous êtes inscrit(e) &#9660;</label>
             <span class="bar"></span>
           </div>
 
@@ -109,7 +109,7 @@
               <option value="9">Mini-entreprise 9</option>
               <option value="10">Mini-entreprise 10</option>
             </select>
-            <label>J'investis dans cette mini-entreprise &#9660;</label>
+            <label  class="">J'investis dans cette mini-entreprise &#9660;</label>
             <span class="bar"></span>
           </div>
 
@@ -141,7 +141,10 @@
       <script src="popper.min.js"></script>
       <script src="bootstrap.min.js"></script>
       <script>
-
+        var animup = document.getElementById("animup-sel");
+        animup.addEventListener("click", function(){
+          animup.classList.add("animup-up");
+        });
       </script>
     </body>
 </html>
