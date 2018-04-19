@@ -22,9 +22,51 @@
 
     </head>
     <body>
-        <h1>Mini-Entreprises</h1>
+      <!-- Header -->
+      <header>
+        <img src="images/logo/logo_lje_small_opti.jpg" alt="logo lje">
+      </header>
+
+      <!-- Navigation -->
+      <nav id="NavMobile">
         <ul>
-          <li>Nom | Produit | Ecole</li>
+          <li><a href="index.html"><img src="images/icones/home.png" alt="icone home"></a></li>
+          <li><a href="mini_entreprises.html"><img src="images/icones/mini.png" alt="icone mini-entreprises"></a></li>
+          <li><a href="investis.html"><img src="images/icones/investis.png" alt="icone j'investis"></a></li>
+        </ul>
+      </nav>
+
+      <nav id="NavTablet">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="mini_entreprises.html">Mini-Entreprises</a></li>
+          <li><a href="investis.html">Investir</a></li>
+        </ul>
+      </nav>
+
+      <div class="clearfix"></div>
+
+      <div class="TitreLightBlue">
+        <h1>Mini-Entreprises</h1>
+      </div>
+
+      <!-- Grille de présentation avec boucle de toutes les mini contenues dans la DB -->
+      <div class="wrapper">
+        <div id="mini_1">
+          <div id="col_logo"><a href="fiche_entreprise.html"><img class="miniature_logo" src="images/logo_produit/logo_8_ways_institut_marie_immaculee_monjoie.png" alt="logo produit"></a></div>
+          <div id="col_nom"><a href="fiche_entreprise.html">8 Ways</a></div>
+          <div id="col_produit">Caddy bag - Sacs de course</div>
+          <div id="col_ecole">Institut Marie Immaculée Montjoie - Site Bizet</div>
+        </div>
+
+        <div id="col_logo"><img class="miniature_logo" src="images/logo_produit/logo_porbinx_institut_sainte_ursule.png" alt="logo produit"></div>
+        <div id="col_nom">Porbinx</div>
+        <div id="col_produit">Sac de collecte de déchets pour voiture</div>
+        <div id="col_ecole">Institut Sainte Ursule</div>
+      </div>
+
+        <!-- <ul>
+          <li><img src="images/logo" alt="logo du produit"></li>
           <li>tri hot tree | sous-plats et planches à découper décoratives et personnalisables | institut saint-boniface parnasse</li>
           <li>Sneak'it | Crochet porte-chaussure | Lycée Émile Jacqmain</li>
           <li>T-Bag | Sacs en tissus | Institut de l'Enfant-Jésus</li>
@@ -35,7 +77,7 @@
           <li>Dreamcandle | Bougie coloré  contenant un bijoux | Institut Don Bosco Val d'Or</li>
           <li>Recyco | Canettes recyclées | Institut de la Providence</li>
           <li>Whyki (Company) | Bougies | - </li>
-        </ul>
+        </ul> -->
 
         <!-- jQuery en premier, puis Popper.js et enfin Bootstrap JS -->
         <script src="jquery-3.3.1.slim.min.js"></script>

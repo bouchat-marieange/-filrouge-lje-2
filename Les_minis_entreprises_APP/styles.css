@@ -3,46 +3,55 @@
 /* Déclaration des variantes polices Roboto classique */
 @font-face {
     font-family: 'robotobold';
-    src: url('Roboto-Bold-webfont.eot');
-    src: url('Roboto-Bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Roboto-Bold-webfont.woff2') format('woff2'),
-         url('Roboto-Bold-webfont.woff') format('woff'),
-         url('Roboto-Bold-webfont.ttf') format('truetype'),
-         url('Roboto-Bold-webfont.svg#robotobold') format('svg');
+    src: url('fonts/Roboto-Bold-webfont.eot');
+    src: url('fonts/Roboto-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Roboto-Bold-webfont.woff2') format('woff2'),
+         url('fonts/Roboto-Bold-webfont.woff') format('woff'),
+         url('fonts/Roboto-Bold-webfont.ttf') format('truetype'),
+         url('fonts/Roboto-Bold-webfont.svg#robotobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotomedium';
+    src: url('fonts/Roboto-Medium-webfont.eot');
+    src: url('fonts/Roboto-Medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Roboto-Medium-webfont.woff2') format('woff2'),
+         url('fonts/Roboto-Medium-webfont.woff') format('woff'),
+         url('fonts/Roboto-Medium-webfont.ttf') format('truetype'),
+         url('fonts/Roboto-Medium-webfont.svg#robotomedium') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'robotoregular';
-    src: url('Roboto-Regular-webfont.eot');
-    src: url('Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Roboto-Regular-webfont.woff2') format('woff2'),
-         url('Roboto-Regular-webfont.woff') format('woff'),
-         url('Roboto-Regular-webfont.ttf') format('truetype'),
-         url('Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    src: url('fonts/Roboto-Regular-webfont.eot');
+    src: url('fonts/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Roboto-Regular-webfont.woff2') format('woff2'),
+         url('fonts/Roboto-Regular-webfont.woff') format('woff'),
+         url('fonts/Roboto-Regular-webfont.ttf') format('truetype'),
+         url('fonts/Roboto-Regular-webfont.svg#robotoregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'robotolight';
-    src: url('Roboto-Light-webfont.eot');
-    src: url('Roboto-Light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Roboto-Light-webfont.woff2') format('woff2'),
-         url('Roboto-Light-webfont.woff') format('woff'),
-         url('Roboto-Light-webfont.ttf') format('truetype'),
-         url('Roboto-Light-webfont.svg#robotolight') format('svg');
+    src: url('fonts/Roboto-Light-webfont.eot');
+    src: url('fonts/Roboto-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Roboto-Light-webfont.woff2') format('woff2'),
+         url('fonts/Roboto-Light-webfont.woff') format('woff'),
+         url('fonts/Roboto-Light-webfont.ttf') format('truetype'),
+         url('fonts/Roboto-Light-webfont.svg#robotolight') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 
 /* Règles générales */
-.Antoine
-{
-  color: #22EE29;
-}
+
 
 html
 {
@@ -451,6 +460,56 @@ button:hover {
 }
 
 
+
+/* Page Mini-Entreprises */
+
+.wrapper
+{
+  margin-top: 25px;
+  display: grid;
+  background-color: #BFE6FD;
+  grid-template-columns: 0.3fr 1fr 1fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  /*grid-gap:1rem; /*gouttière de 1rem*/
+  justify-items: center;
+  align-items: center;
+}
+
+.miniature_logo
+{
+  background-color: #fff;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+
+#col_logo
+{
+  /* background-color: #fff; */
+  align-items: center;
+}
+
+#col_nom
+{
+
+}
+
+#col_produit
+{
+
+}
+
+#col_ecole
+{
+
+}
+
+
+
+
+
+
 /* Footer */
 footer
 {
@@ -464,7 +523,7 @@ footer
   margin-top:25px;
 }
 
-/* Footer */
+
 footer p
 {
   width: 100%;
@@ -530,3 +589,9 @@ footer p
 {
 
 }
+
+/* Mise en évidence des éléments à intégré à partir de la DB php */
+/* .Antoine
+{
+  color: #22EE29;
+} */
