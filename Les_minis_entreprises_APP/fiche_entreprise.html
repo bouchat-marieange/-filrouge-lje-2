@@ -1,0 +1,102 @@
+<?php include 'model/entreprise.php';
+  var ent= get_entreprise_id($_get['id']);
+
+?>
+<!doctype html>
+<html lang="fr">
+    <head>
+        <title>Fiche mini-entreprise</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="bootstrap.min.css">
+
+        <!-- Personnal CSS -->
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- favicon -->
+        <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#2b5797">
+        <meta name="theme-color" content="#ffffff">
+
+    </head>
+    <body>
+      <!-- Header -->
+      <header>
+        <img src="images/logo/logo_lje_small_opti.jpg" alt="logo lje">
+      </header>
+
+      <!-- Navigation -->
+      <nav id="NavMobile">
+        <ul class="ul_nav_mobile">
+          <li class="li_nav_mobile"><a class="a_nav_mobile" href="index.html"><img class="img_nav_mobile" src="images/icones/home.png" alt="icone home"></a></li>
+          <li class="li_nav_mobile"><a class="a_nav_mobile" href="mini_entreprises.html"><img class="img_nav_mobile"src="images/icones/mini.png" alt="icone mini-entreprises"></a></li>
+          <li class="li_nav_mobile"><a class="a_nav_mobile" href="investis.html"><img class="img_nav_mobile"src="images/icones/investis.png" alt="icone j'investis"></a></li>
+        </ul>
+      </nav>
+
+      <nav id="NavTablet">
+        <ul class="ul_nav_tablet">
+          <li class="li_nav_tablet"><a class="a_nav_tablet" href="index.html">Home</a></li>
+          <li class="li_nav_tablet"><a class="a_nav_tablet" href="mini_entreprises.html">Mini-Entreprises</a></li>
+          <li class="li_nav_tablet"><a class="a_nav_tablet" href="investis.html">Investir</a></li>
+        </ul>
+      </nav>
+
+      <div class="clearfix"></div>
+
+      <div class="TitreLightBlue">
+        <h1 class="Antoine">Nom de la mini-entreprise</h1>
+      </div>
+
+      <div id="logo_produit"><img src="/logo_produit/<?php echo ent['logo'] ?>" alt="logo produit"></div>
+      <div id="photo_produit"><img src="/logo_produit/<?php echo ent['photo'] ?>" alt="photo produit"></div>
+
+      <div id="infos_mini">
+        <h2 class="Antoine">Nom de la mini-entreprise</h2>
+        <p>
+          <span class="bold">Nom mini-entreprise :</span>
+          <span id="nom_mini" class="Antoine">Nom mini-entreprise</span>
+        </p>
+        <p>
+          <span class="bold">Description :</span>
+          <span id="description_produit" class="Antoine">Description produit</span>
+        </p>
+        <p>
+          <span class="bold">École :</span>
+          <span id="nom_ecole" class="Antoine">Nom de l'école</span>
+        </p>
+        <p>
+          <span class="bold">Liens Facebook :</span>
+          <span id="lien_facebook" class="Antoine">Lien Facebook</span>
+        </p>
+        <p>
+          <span class="bold">Email :</span>
+          <span id="email_mini" class="Antoine">Email mini-entreprise</span>
+        </p>
+
+        <p>Cette mini app a déjà recolté   €</p>
++        <?php $_GET['id'];
++            echo ent['nom'];
++            echo ent['investissements'];
++
++
++        ?>
+
+        <!--Liens vers investissement avec id de l'entreprise dans l'url -->
+
+
+      </div>
+
+        <!--Liens vers investissement avec id de l'entreprise dans l'url -->
+        <!-- jQuery en premier, puis Popper.js et enfin Bootstrap JS -->
+        <script src="jquery-3.3.1.slim.min.js"></script>
+        <script src="popper.min.js"></script>
+        <script src="bootstrap.min.js"></script>
+    </body>
+</html>

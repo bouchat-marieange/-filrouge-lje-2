@@ -11,14 +11,137 @@
         <!-- Personnal CSS -->
         <link rel="stylesheet" href="styles.css">
 
+        <!-- favicon -->
+        <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#2b5797">
+        <meta name="theme-color" content="#ffffff">
+
     </head>
     <body>
+      <!-- Header -->
+      <header>
+        <img src="images/logo/logo_lje_small_opti.jpg" alt="logo lje">
+      </header>
+
+      <!-- Navigation -->
+      <nav id="NavMobile">
+        <ul>
+          <li><a href="index.html"><img src="images/icones/home.png" alt="icone home"></a></li>
+          <li><a href="mini_entreprises.html"><img src="images/icones/mini.png" alt="icone mini-entreprises"></a></li>
+          <li><a href="investis.html"><img src="images/icones/investis.png" alt="icone j'investis"></a></li>
+        </ul>
+      </nav>
+
+      <nav id="NavTablet">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="mini_entreprises.html">Mini-Entreprises</a></li>
+          <li><a href="investis.html">Investir</a></li>
+        </ul>
+      </nav>
+
+      <div class="clearfix"></div>
+
+      <div class="TitreLightBlue">
         <h1>J'investis</h1>
+      </div>
 
 
-        <!-- jQuery en premier, puis Popper.js et enfin Bootstrap JS -->
-        <script src="jquery-3.3.1.slim.min.js"></script>
-        <script src="popper.min.js"></script>
-        <script src="bootstrap.min.js"></script>
+      <!-- Formulaire -->
+
+      <form class="material-form">
+
+        <div class="container">
+
+          <div class="material-input">
+            <input class="input-item" type="text" required id="input-NomEleve">
+            <label>Nom de l'élève</label>
+            <span class="bar"></span>
+          </div>
+
+          <div class="material-input">
+            <input class="input-item" type="text" required id="input-PrenomEleve">
+            <label>Prénom de l'élève</label>
+            <span class="bar"></span>
+          </div>
+
+          <!-- Attention Antoine à remplir avec le vrai nom des écoles participantes selectionnées par Antoine -->
+          <div class="material-input">
+            <select class="input-EcoleEleve">
+              <option disabled selected></option>
+              <option value="1">Ecole 1</option>
+              <option value="2">Ecole 2</option>
+              <option value="3">Ecole 3</option>
+              <option value="4">Ecole 4</option>
+              <option value="5">Ecole 5</option>
+              <option value="6">Ecole 6</option>
+              <option value="7">Ecole 7</option>
+              <option value="8">Ecole 8</option>
+              <option value="9">Ecole 9</option>
+              <option value="10">Ecole 10</option>
+            </select>
+            <label>Ecole dans laquelle vous êtes inscrit(e) &#9660;</label>
+            <span class="bar"></span>
+          </div>
+
+          <div class="material-input">
+            <input class="input-item" type="email" data-error="Invalid email." required id="input-EmailEleve">
+            <label>Email de l'élève</label>
+            <span class="bar"></span>
+          </div>
+
+          <!-- Attention Antoine à remplir avec le vrai nom des entreprise que tu auras selectionnées -->
+          <div class="material-input">
+            <select class="input-item">
+              <option disabled selected></option>
+              <option value="1">Mini-entreprise 1</option>
+              <option value="2">Mini-entreprise 2</option>
+              <option value="3">Mini-entreprise 3</option>
+              <option value="4">Mini-entreprise 4</option>
+              <option value="5">Mini-entreprise 5</option>
+              <option value="6">Mini-entreprise 6</option>
+              <option value="7">Mini-entreprise 7</option>
+              <option value="8">Mini-entreprise 8</option>
+              <option value="9">Mini-entreprise 9</option>
+              <option value="10">Mini-entreprise 10</option>
+            </select>
+            <label>J'investis dans cette mini-entreprise &#9660;</label>
+            <span class="bar"></span>
+          </div>
+
+          <div class="material-input">
+            <input class="input-item" type="text" required id="input-MontantInvesti">
+            <label>Montant investi</label><label class=label-€>€</label>
+            <span class="bar"></span>
+          </div>
+
+          <div class="material-input">
+            <input class="input-item" type="text" required id="input-BanqueEleve">
+            <label>Compte bancaire élève (ex: BE 00 0000 0000 0000)</label>
+            <span class="bar"></span>
+          </div>
+
+          <button type="submit" class="bouton_form">ENVOYER</button>
+
+        </div>
+
+      </form>
+
+      <!-- Footer -->
+      <footer>
+      <p>Copyright © Les Jeunes Entreprises </p>
+      </footer>
+
+      <!-- jQuery en premier, puis Popper.js et enfin Bootstrap JS -->
+      <script src="jquery-3.3.1.slim.min.js"></script>
+      <script src="popper.min.js"></script>
+      <script src="bootstrap.min.js"></script>
+      <script>
+
+      </script>
     </body>
 </html>

@@ -1,4 +1,4 @@
-#Vous désirez soutenir une ou plusieurs mini-entreprises de votre région?
+# Soutenir une ou plusieurs mini-entreprises
 
 Grâce à vous, les participants de la mini-entreprise de votre choix pourront bénéficier d'un soutien financier pour acheter les matières premières nécessaires à la réalisation de leur projet.
 
@@ -15,4 +15,4 @@ Lors de la clôture des comptes à la fin de l'année, si le quota fixé par la 
 Pour investir dans les mini-entreprises:
 
 * vous devez être inscrit comme élève dans l'une des écoles participantes
-* vous pouvez soutenir financièrement autant de mini-entreprises que vous le souhaitez 
+* vous pouvez soutenir financièrement autant de mini-entreprises que vous le souhaitez

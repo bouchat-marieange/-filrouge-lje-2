@@ -3,10 +3,12 @@
     <head>
         <title>Accueil</title>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
         <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="bootstrap.min.css">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+        <!-- <link rel="stylesheet" href="bootstrap.min.css"> -->
 
         <!-- Personnal CSS -->
         <link rel="stylesheet" href="styles.css">
@@ -28,23 +30,40 @@
 
         <!-- Navigation -->
         <nav id="NavMobile">
-          <ul>
-            <li><a href="index.html"><img src="images/icones/home.png" alt="icone home"></a></li>
-            <li><a href="mini_entreprises.html"><img src="images/icones/mini.png" alt="icone mini-entreprises"></a></li>
-            <li><a href="investis.html"><img src="images/icones/investis.png" alt="icone j'investis"></a></li>
+          <ul class="ul_nav_mobile">
+            <li class="li_nav_mobile"><a class="a_nav_mobile" href="index.html"><img class="img_nav_mobile" src="images/icones/home.png" alt="icone home"></a></li>
+            <li class="li_nav_mobile"><a class="a_nav_mobile" href="mini_entreprises.html"><img class="img_nav_mobile"src="images/icones/mini.png" alt="icone mini-entreprises"></a></li>
+            <li class="li_nav_mobile"><a class="a_nav_mobile" href="investis.html"><img class="img_nav_mobile"src="images/icones/investis.png" alt="icone j'investis"></a></li>
           </ul>
         </nav>
 
-        <nav id="NavNoMobile">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="mini_entreprises.html">Mini</a></li>
-            <li><a href="investis.html">Investir</a></li>
+        <nav id="NavTablet">
+          <ul class="ul_nav_tablet">
+            <li class="li_nav_tablet"><a class="a_nav_tablet" href="index.html">Home</a></li>
+            <li class="li_nav_tablet"><a class="a_nav_tablet" href="mini_entreprises.html">Mini-Entreprises</a></li>
+            <li class="li_nav_tablet"><a class="a_nav_tablet" href="investis.html">Investir</a></li>
           </ul>
         </nav>
+
+        <div class="clearfix"></div>
 
         <!-- Contenu -->
 
+        <h2 class="TitreLightBlue">Soutenir une mini-entreprise</h2>
+          <p>Grâce à vous, les participants de la mini-entreprise de votre choix pourront bénéficier d'un soutien financier pour acheter les matières premières nécessaires à la réalisation de leur projet.</p>
+          <p>Vous pouvez voir en temps réel le montant des investissements déjà récolté par chaque mini-entreprise dans sa fiche dédiée.</p>
+
+        <h2 class="TitreLightBlue">Avantages</h2>
+          <p>Chaque mini-entreprise a fixé un quota de rentabilité à atteindre. En devenant investisseur, vous apportez un capital et devenez donc actionnaire à concurrence de la somme versée.</p>
+          <p>Lors de la clôture des comptes à la fin de l'année, si le quota fixé par la mini-entreprise est atteint, les bénéfices enregistrés seront en partie reversés aux actionnaires. Si vos choix ont été judicieux vous avez donc la possibilité d'obtenir non seulement un remboursement du capital investi mais également une somme supplémentaires en fonction des bénéfices réalisé par la mini-entreprise.</p>
+
+        <h2 class="TitreLightBlue">Conditions de participation</h2>
+          <p>Pour investir dans les mini-entreprises:</p>
+          <ul id="listeConditions">
+            <li>vous devez être inscrit comme élève dans l'une des écoles participantes</li>
+            <br/>
+            <li>vous pouvez soutenir financièrement autant de mini-entreprises que vous le souhaitez</li>
+          </ul>
 
         <!-- Footer -->
     <footer>
@@ -52,8 +71,8 @@
     </footer>
 
         <!-- jQuery en premier, puis Popper.js et enfin Bootstrap JS -->
-        <script src="jquery-3.3.1.slim.min.js"></script>
+        <!-- <script src="jquery-3.3.1.slim.min.js"></script>
         <script src="popper.min.js"></script>
-        <script src="bootstrap.min.js"></script>
+        <script src="bootstrap.min.js"></script> -->
     </body>
 </html>

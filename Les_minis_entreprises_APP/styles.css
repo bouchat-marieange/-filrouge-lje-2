@@ -37,74 +37,85 @@
     font-style: normal;
 }
 
-/* Déclaration des polices Roboto condensed */
-@font-face {
-    font-family: 'roboto_condensedbold';
-    src: url('RobotoCondensed-Bold-webfont.eot');
-    src: url('RobotoCondensed-Bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('RobotoCondensed-Bold-webfont.woff2') format('woff2'),
-         url('RobotoCondensed-Bold-webfont.woff') format('woff'),
-         url('RobotoCondensed-Bold-webfont.ttf') format('truetype'),
-         url('RobotoCondensed-Bold-webfont.svg#roboto_condensedbold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'roboto_condensedregular';
-    src: url('RobotoCondensed-Regular-webfont.eot');
-    src: url('RobotoCondensed-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('RobotoCondensed-Regular-webfont.woff2') format('woff2'),
-         url('RobotoCondensed-Regular-webfont.woff') format('woff'),
-         url('RobotoCondensed-Regular-webfont.ttf') format('truetype'),
-         url('RobotoCondensed-Regular-webfont.svg#roboto_condensedregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'roboto_condensedlight';
-    src: url('RobotoCondensed-Light-webfont.eot');
-    src: url('RobotoCondensed-Light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('RobotoCondensed-Light-webfont.woff2') format('woff2'),
-         url('RobotoCondensed-Light-webfont.woff') format('woff'),
-         url('RobotoCondensed-Light-webfont.ttf') format('truetype'),
-         url('RobotoCondensed-Light-webfont.svg#roboto_condensedlight') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
 
 /* Règles générales */
+.Antoine
+{
+  color: #22EE29;
+}
+
+html
+{
+  width: 100%;
+}
+
+
+body
+{
+  width: 100vw;
+}
+
 *
 {
-  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-family: 'robotoregular', Helvetica, Arial, sans-serif;
 }
+
+p, ul
+{
+  color: #464646;
+}
+
+.bold
+{
+  font-family: 'robotobold', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+h2
+{
+  margin : 0;
+  padding: 0;
+}
+
+p
+{
+  margin: 16px 25px;
+  text-align: center;
+}
+
+.clearfix
+{
+  clear: both;
+}
+
 
 /* Header */
 header
 {
+  display:block;
   width: 100%;
   text-align: center;
   padding: 15px 0px 15px 0px;
+  margin-bottom: 35px;
 }
 
 
 /* Navigation */
 nav
 {
-  /* background-color: #0073B9; */
   height: 40px;
   line-height: 40px;
   white-space: nowrap;
+  /* padding: 10px 0px; */
 }
 
-li
+nav li
 {
   float: left;
   width: 33%;
 }
 
-ul
+nav ul
 {
   list-style-type: none;
   margin: 0;
@@ -113,66 +124,409 @@ ul
   background-color: #0073B9;
 }
 
-li img
+nav li img
 {
-  max-width: 40%;
+  max-width: 20%;
+  min-width: 25%;
+  margin-top: 15px;
 }
 
-li a
+nav li a
 {
   display: block;
   color: #FFF;
   text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1.2em;
 }
 
-li a:hover
+nav li a:hover
 {
     background-color: #009EFF;
     text-decoration: none;
-
 }
-
-/* li a:hover:not(.active) {
-    background-color: #111;
-} */
 
 .active {
     background-color: #4CAF50;
 }
 
-#NavMobile
-{
-  /* visibility: visible; */
-  /* visibility: hidden; */
-}
 
-#NavNoMobile
-{
-  /* visibility: visible; */
-  visibility: hidden;
-}
 
 /* Contenu */
+.TitreLightBlue
+{
+  background-color: #71B8E3;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.2em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #fff;
+}
+
+#listeConditions
+{
+  margin-bottom: 85px;
+  overflow: auto;
+}
+
+/* Formulaire */
+.material-form {
+  font-family: 'robotoregular',sans-serif;
+  font-weight: normal;
+  background: #B5DBED;
+  margin: -10px;
+  padding: 25px;
+  margin-bottom: 65px;
+}
+.material-form .container {
+  background: white;
+  padding: 50px;
+  padding-bottom: 100px;
+}
+.material-form .container .material-input {
+  position: relative;
+  margin-bottom: 30px;
+}
+.material-form .container .material-input input {
+  background-color: transparent;
+}
+.material-form .container .material-input label {
+  color: #999;
+  font-size: 16px;
+  position: absolute;
+  pointer-events: none;
+  top: 10px;
+  transition: 0.2s ease all;
+  width: 100%;
+}
+.material-form .container .material-input input:not([type]),
+.material-form .container .material-input input[type=text],
+.material-form .container .material-input input[type=password],
+.material-form .container .material-input input[type=email],
+.material-form .container .material-input input[type=url],
+.material-form .container .material-input input[type=time],
+.material-form .container .material-input input[type=date],
+.material-form .container .material-input input[type=datetime-local],
+.material-form .container .material-input input[type=tel],
+.material-form .container .material-input input[type=number],
+.material-form .container .material-input input[type=search] {
+  color: #333;
+  font-size: 16px;
+  padding: 10px 10px 10px 0;
+  position: relative;
+  display: block;
+  border: none;
+  width: 100%;
+  border-bottom: 1px solid #d5d5d5;
+}
+.material-form .container .material-input input:not([type]):focus,
+.material-form .container .material-input input[type=text]:focus,
+.material-form .container .material-input input[type=password]:focus,
+.material-form .container .material-input input[type=email]:focus,
+.material-form .container .material-input input[type=url]:focus,
+.material-form .container .material-input input[type=time]:focus,
+.material-form .container .material-input input[type=date]:focus,
+.material-form .container .material-input input[type=datetime-local]:focus,
+.material-form .container .material-input input[type=tel]:focus,
+.material-form .container .material-input input[type=number]:focus,
+.material-form .container .material-input input[type=search]:focus {
+  outline: none;
+}
+.material-form .container .material-input input:not([type]):focus + label,
+.material-form .container .material-input input[type=text]:focus + label,
+.material-form .container .material-input input[type=password]:focus + label,
+.material-form .container .material-input input[type=email]:focus + label,
+.material-form .container .material-input input[type=url]:focus + label,
+.material-form .container .material-input input[type=time]:focus + label,
+.material-form .container .material-input input[type=date]:focus + label,
+.material-form .container .material-input input[type=datetime-local]:focus + label,
+.material-form .container .material-input input[type=tel]:focus + label,
+.material-form .container .material-input input[type=number]:focus + label,
+.material-form .container .material-input input[type=search]:focus + label,
+.material-form .container .material-input input:not([type]):valid + label,
+.material-form .container .material-input input[type=text]:valid + label,
+.material-form .container .material-input input[type=password]:valid + label,
+.material-form .container .material-input input[type=email]:valid + label,
+.material-form .container .material-input input[type=url]:valid + label,
+.material-form .container .material-input input[type=time]:valid + label,
+.material-form .container .material-input input[type=date]:valid + label,
+.material-form .container .material-input input[type=datetime-local]:valid + label,
+.material-form .container .material-input input[type=tel]:valid + label,
+.material-form .container .material-input input[type=number]:valid + label,
+.material-form .container .material-input input[type=search]:valid + label {
+  top: -10px;
+  font-size: 12px;
+  color: #167ffc;
+}
+.material-form .container .material-input input:not([type]):focus ~ .bar:before,
+.material-form .container .material-input input[type=text]:focus ~ .bar:before,
+.material-form .container .material-input input[type=password]:focus ~ .bar:before,
+.material-form .container .material-input input[type=email]:focus ~ .bar:before,
+.material-form .container .material-input input[type=url]:focus ~ .bar:before,
+.material-form .container .material-input input[type=time]:focus ~ .bar:before,
+.material-form .container .material-input input[type=date]:focus ~ .bar:before,
+.material-form .container .material-input input[type=datetime-local]:focus ~ .bar:before,
+.material-form .container .material-input input[type=tel]:focus ~ .bar:before,
+.material-form .container .material-input input[type=number]:focus ~ .bar:before,
+.material-form .container .material-input input[type=search]:focus ~ .bar:before,
+.material-form .container .material-input input:not([type]):focus ~ .bar:after,
+.material-form .container .material-input input[type=text]:focus ~ .bar:after,
+.material-form .container .material-input input[type=password]:focus ~ .bar:after,
+.material-form .container .material-input input[type=email]:focus ~ .bar:after,
+.material-form .container .material-input input[type=url]:focus ~ .bar:after,
+.material-form .container .material-input input[type=time]:focus ~ .bar:after,
+.material-form .container .material-input input[type=date]:focus ~ .bar:after,
+.material-form .container .material-input input[type=datetime-local]:focus ~ .bar:after,
+.material-form .container .material-input input[type=tel]:focus ~ .bar:after,
+.material-form .container .material-input input[type=number]:focus ~ .bar:after,
+.material-form .container .material-input input[type=search]:focus ~ .bar:after,
+.material-form .container .material-input input:not([type]):valid ~ .bar:before,
+.material-form .container .material-input input[type=text]:valid ~ .bar:before,
+.material-form .container .material-input input[type=password]:valid ~ .bar:before,
+.material-form .container .material-input input[type=email]:valid ~ .bar:before,
+.material-form .container .material-input input[type=url]:valid ~ .bar:before,
+.material-form .container .material-input input[type=time]:valid ~ .bar:before,
+.material-form .container .material-input input[type=date]:valid ~ .bar:before,
+.material-form .container .material-input input[type=datetime-local]:valid ~ .bar:before,
+.material-form .container .material-input input[type=tel]:valid ~ .bar:before,
+.material-form .container .material-input input[type=number]:valid ~ .bar:before,
+.material-form .container .material-input input[type=search]:valid ~ .bar:before,
+.material-form .container .material-input input:not([type]):valid ~ .bar:after,
+.material-form .container .material-input input[type=text]:valid ~ .bar:after,
+.material-form .container .material-input input[type=password]:valid ~ .bar:after,
+.material-form .container .material-input input[type=email]:valid ~ .bar:after,
+.material-form .container .material-input input[type=url]:valid ~ .bar:after,
+.material-form .container .material-input input[type=time]:valid ~ .bar:after,
+.material-form .container .material-input input[type=date]:valid ~ .bar:after,
+.material-form .container .material-input input[type=datetime-local]:valid ~ .bar:after,
+.material-form .container .material-input input[type=tel]:valid ~ .bar:after,
+.material-form .container .material-input input[type=number]:valid ~ .bar:after,
+.material-form .container .material-input input[type=search]:valid ~ .bar:after {
+  width: 51%;
+  background: #167ffc;
+  border-bottom: 0px;
+}
+.material-form .container .material-input .bar {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+.material-form .container .material-input .bar:before,
+.material-form .container .material-input .bar:after {
+  content: '';
+  height: 2px;
+  width: 0px;
+  position: absolute;
+  bottom: 0.5px;
+  background: #167ffc;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+.material-form .container .material-input .bar:before {
+  left: 51%;
+}
+.material-form .container .material-input .bar:after {
+  right: 49%;
+}
+.material-form .container .material-input .bar + label:after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 65px;
+  opacity: 0;
+  transition: 0.2s opacity ease-out, 0.2s color ease-out;
+  -moz-transition: 0.2s opacity ease-out, 0.2s color ease-out;
+  -webkit-transition: 0.2s opacity ease-out, 0.2s color ease-out;
+}
+.material-form .container .material-input select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  background-color: transparent;
+  /* background: url('images/icones/sort-down.svg') right transparent; */
+  color: #333;
+  font-size: 16px;
+  padding: 10px 10px 10px 0;
+  position: relative;
+  display: block;
+  width: 300px;
+  border: none;
+  border-bottom: 1px solid #d5d5d5;
+  border-radius: 0;
+}
+.material-form .container .material-input select:focus {
+  outline: none;
+}
+.material-form .container .material-input select + .icon-arrow-down {
+  position: absolute;
+  float: right;
+}
+.material-form .container .material-input select option:checked + label {
+  display: none;
+}
+
+button
+{
+  font-family: 'robotoregular', sans-serif;
+  transition: transform 0.2s cubic-bezier(0.64, 0.09, 0.08, 1), box-shadow 0.2s cubic-bezier(0.64, 0.09, 0.08, 1);
+  border: none;
+  background: #03A9F4;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 5px 0 5px 0;
+  width: 30%;
+  color: white;
+  margin: 25px 0 10px 0;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.bouton_form
+{
+  float: right;
+}
+
+.label-€
+{
+  text-align: right;
+}
+
+.fleche-bas
+{
+  text-align: left;
+  padding-left:285px;
+}
+
+
+
+/* Fiche mini-entreprises */
+#infos_mini
+{
+  width: 80%;
+  text-align:left;
+}
+
+#infos_mini h2
+{
+  text-align: center;
+}
+
+#infos_mini p
+{
+  text-align: left;
+}
+
+#nom_mini
+{
+
+}
+
+#description_produit
+{
+
+}
+
+#nom_ecole
+{
+
+}
+
+#lien_facebook
+{
+
+}
+
+#email_mini
+{
+
+}
+
 
 /* Footer */
 footer
 {
   display: block;
   width: 100%;
+  height: 65px;
   position: fixed;
   bottom: 0;
   background-color: #F7F7F7;
   font-weight: bold;
-  height: 45px;
-  line-height: 45px;
+  margin-top:25px;
 }
 
+/* Footer */
 footer p
 {
+  width: 100%;
   text-align: center;
+  height: 30px;
+  line-height: 30px;
+}
+
+
+/* Media Queries */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px)
+{
+  #NavTablet
+  {
+    display: none;
+  }
+
+  header
+  {
+    margin-bottom: 0px;
+  }
+
+  nav
+  {
+    /* background-color: #0073B9; */
+    height: 4em;
+    line-height: 4em;
+    white-space: nowrap;
+  }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px)
+{
+  #NavMobile
+  {
+    display: none;
+  }
+
+  #NavTablet
+  {
+    margin-top:-40px;
+  }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px)
+{
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px)
+{
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px)
+{
+
 }
