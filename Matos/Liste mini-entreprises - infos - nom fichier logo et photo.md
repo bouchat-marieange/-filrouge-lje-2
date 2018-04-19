@@ -45,48 +45,48 @@ Facebook:	https://www.facebook.com/MINIAURAE
 Email:		aurae.entreprise@gmail.com 
 
 
-Logo produit:
-Photo produit:
-Nom:
-Produit:
-Ecole:
-Facebook:
-Email: 
+Logo produit:	logo_cho_ecole_europeenne_bruxelles_3.png
+Photo produit:	photo_cho_ecole_europeenne_bruxelles_3.jpg
+Nom:		cHo
+Produit:	Thermos
+Ecole:		École européenne de Bruxelles III
+Facebook:	https://www.facebook.com/cHo20172018
+Email: 		cho.mini.entreprise@gmail.com
 
 
-Logo produit:
-Photo produit:
-Nom:
-Produit:
-Ecole:
-Facebook:
-Email: 
+Logo produit:	logo_orgamix_athenee_communal_Emile_Bockstael.png
+Photo produit:	photo_orgamix_athenee_communal_Emile_Bockstael.jpg
+Nom:		Orgamix
+Produit:	Vente de graines/céréales
+Ecole:		Athenee Communal Emile Bockstael
+Facebook:	https://www.facebook.com/Orgamix-1756902921272106
+Email: 		orgamix@gmail.com
 
 
-Logo produit:
-Photo produit:
-Nom:
-Produit:
-Ecole:
-Facebook:
-Email: 
+Logo produit:	logo_sneakit_lycee_emile_jacqmain.png
+Photo produit:	photo_sneakit_lycee_emile_jacqmain.jpg
+Nom:		Sneak'it
+Produit:	Crochet porte-chaussure
+Ecole:		Lycée Émile Jacqmain
+Facebook:	https://www.facebook.com/Sneakit-124898484844381
+Email: 		sneakit2017@gmail.com
 
 
-Logo produit:
-Photo produit:
-Nom:
-Produit:
-Ecole:
-Facebook:
-Email: 
+Logo produit:	logo_kalimago_athenee_fernand_blum.png
+Photo produit:	photo_kalimago_athenee_fernand_blum.jpg
+Nom:		Kalimago
+Produit:	Tatouages éphémères
+Ecole:		Athénée Fernand Blum
+Facebook:	https://www.facebook.com/Kalimago-125911448185480
+Email: 		Kalimago@outlook.be
 
 
-Logo produit:
-Photo produit:
-Nom:
-Produit:
-Ecole:
-Facebook:
-Email: 
+Logo produit:	logo_omacaron_athenee_royal_victor_horta.png
+Photo produit:	photo_omacaron_athenee_royal_victor_horta.png
+Nom:		O'Macaron
+Produit:	Macaron
+Ecole:		Athenée Royal Victor HortaMacaron
+Facebook:	https://www.facebook.com/les6pbur
+Email: 		omacaron@outlook.be
 
 
